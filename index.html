@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mourad EL OUATIK - DevSecOps & Cloud Security Engineer</title>
+    <link rel="icon" type="image/png" href="MEW.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+    
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-name">M.ELOUATIK</span>
+                <span class="brand-bracket">/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-tag">&lt;Cybersecurity Engineering Student at ENSA Marrakech /&gt;</div>   
+                    <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 20px;">
+                        <img src="MEW.png" alt="Mourad EL OUATIK" style="width: 150px; height: 150px; object-fit: contain;">
+                        <h1 class="hero-title" style="margin-bottom: 0;">
+                            <span class="name-highlight">MOURAD</span><br>
+                            <span class="name-main">EL OUATIK</span>
+                        </h1>
+                    </div>
+                        <div class="hero-subtitle">
+                            <span id="typed-text"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            Securing the cloud, one pipeline at a time. Specialized in DevSecOps automation, 
+                            cloud security architecture, and real-time threat detection.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="10">0</div>
+                                <div class="stat-label">Security Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="8">0</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="5000">0</div>
+                                <div class="stat-label">Events/Day Analyzed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="4">0</div>
+                                <div class="stat-label">Leadership Roles</div>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary-custom">
+                                <i class="fas fa-code"></i> View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-secondary-custom">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </a>
+                            <a href="Mourad-EL-OUATIK.pdf" class="btn btn-outline-custom" id="downloadCV">
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                        <div class="hero-tech-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" title="Azure">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                        <div class="security-dashboard">
+                            <div class="dashboard-header">
+                                <span class="status-indicator"></span>
+                                <span>SYSTEM STATUS: ACTIVE</span>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="availability-scan">
+                                    <div class="scan-header">
+                                        <i class="fas fa-radar"></i>
+                                        <span>SCANNING FOR OPPORTUNITIES...</span>
+                                    </div>
+                                    <div class="scan-result">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span class="result-text">Available for PFA Internship</span>
+                                        <span class="duration">(1-2 months)</span>
+                                    </div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Focus Areas</span>
+                                    <div class="metric-bars">
+                                        <div class="bar-item">
+                                            <span class="bar-label">DevOps</span>
+                                            <div class="bar-container">
+                                                <div class="bar-fill" style="width: 55%;">55%</div>
+                                            </div>
+                                        </div>
+                                        <div class="bar-item">
+                                            <span class="bar-label">Cloud Security</span>
+                                            <div class="bar-container">
+                                                <div class="bar-fill" style="width: 45%;">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="threat-map">
+                                    <div class="threat-line"></div>
+                                    <div class="threat-line"></div>
+                                    <div class="threat-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="./Goat1.jpeg" alt="Mourad EL OUATIK" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                            <div class="scan-lines"></div>
+                        </div>
+                        <div class="floating-tag tag-1">DevSecOps</div>
+                        <div class="floating-tag tag-2">Cloud Security</div>
+                        <div class="floating-tag tag-3">Automation</div>
+                        <div class="floating-tag tag-4">Monitoring</div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="section-header">
+                        <span class="section-tag">&lt;about&gt;</span>
+                        <h2 class="section-title">Who I Am</h2>
+                    </div>
+                    <div class="about-content">
+                        <p class="lead">
+                            4th year Engineering student specializing in Cyber Defense and Embedded Telecommunications at ENSA Marrakech, 
+                            with a strong focus on cryptography, Linux/Unix systems security, and intrusion detection systems.
+                        </p>
+                        <p>
+                            With extensive experience in developing multiple academic and professional projects, I've strengthened 
+                            my expertise in DevSecOps practices, cloud security architecture, and real-time threat monitoring. 
+                            My leadership roles as President of Self-Dev Club and Vice-President of MUN ENSA Marrakech have 
+                            honed my project management and collaborative skills.
+                        </p>
+                        <p>
+                            I'm passionate about designing innovative and resilient cybersecurity solutions, leveraging cutting-edge 
+                            technologies like post-quantum cryptography, SDN firewalls, and AI-powered threat detection to protect 
+                            modern infrastructure.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Post-Quantum Cryptography Expert</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Multi-Cloud Security (AWS, Azure, OCI)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>CI/CD Pipeline Security</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Real-time Threat Analytics</span>
+                            </div>
+                        </div>
+                        <div class="about-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Based in Marrakech, Morocco</span>
+                        </div>
+                    </div>
+                    <span class="section-tag closing-tag">&lt;/about&gt;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Technologies & Tools I Master</p>
+            </div>
+            <div class="row g-4">
+                <!-- Cloud & Infrastructure -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="skill-title">Cloud & Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS (EC2, S3, IAM)</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Oracle Cloud</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevSecOps -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="skill-title">DevSecOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitLab CI/CD</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Trivy</span>
+                            <span class="skill-tag">SonarQube</span>
+                            <span class="skill-tag">SAST/DAST</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Tools -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="skill-title">Security Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Suricata</span>
+                            <span class="skill-tag">Snort</span>
+                            <span class="skill-tag">Firewalls</span>
+                            <span class="skill-tag">Honeypots</span>
+                            <span class="skill-tag">Wazuh</span>
+                            <span class="skill-tag">Forensics</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Analysis -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="skill-title">Monitoring & Logs</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">InfluxDB</span>
+                            <span class="skill-tag">ELK Stack</span>
+                            <span class="skill-tag">Telegraf</span>
+                            <span class="skill-tag">SIEM</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">PowerShell</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cryptography -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="skill-title">Cryptography</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Post-Quantum Crypto</span>
+                            <span class="skill-tag">Kyber</span>
+                            <span class="skill-tag">Dilithium</span>
+                            <span class="skill-tag">AES</span>
+                            <span class="skill-tag">RSA</span>
+                            <span class="skill-tag">PKI</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--progress: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/skills&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Professional Certifications</h2>
+                <p class="section-subtitle">Industry-Recognized Credentials</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="cert-name">Azure Security Engineer Associate</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-date">March 2026</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-badge">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4 class="cert-name">Public Cloud Security 7.6.4 Architect</h4>
+                    <p class="cert-issuer">Fortinet</p>
+                    <p class="cert-date">January 2026</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-badge">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4 class="cert-name">OCI Foundations Associate</h4>
+                    <p class="cert-issuer">Oracle</p>
+                    <p class="cert-date">February 2026</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="cert-badge">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h4 class="cert-name">DevOps Capstone</h4>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">February 2026</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="cert-badge">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4 class="cert-name">Cloud Tech Associate Advanced Security</h4>
+                    <p class="cert-issuer">Acronis</p>
+                    <p class="cert-date">January 2026</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="cert-badge">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4 class="cert-name">FCA - FortiGate 7.6 Operator</h4>
+                    <p class="cert-issuer">Fortinet</p>
+                    <p class="cert-date">December 2025</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="cert-badge">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4 class="cert-name">IBM Machine Learning Professional</h4>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">December 2025</p>
+                    <div class="cert-verified">
+                        <i class="fas fa-check-circle"></i> Verified
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://www.credly.com/users/mourad-el-ouatik" target="_blank" class="btn btn-primary-custom">
+                    <i class="fas fa-award"></i> View All on Credly
+                </a>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/certifications&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-World Security Solutions</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters text-center mb-5" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="devsecops">DevSecOps</button>
+                <button class="filter-btn" data-filter="cloud">Cloud Security</button>
+                <button class="filter-btn" data-filter="ids">IDS/IPS</button>
+                <button class="filter-btn" data-filter="crypto">Cryptography</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1: CI/CD Pipeline -->
+                <div class="project-card" data-category="devsecops cloud" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Secure CI/CD Pipeline</h3>
+                            <span class="project-period">Jan - Mar 2026</span>
+                        </div>
+                        <p class="project-description">
+                            DevSecOps pipeline with automated security testing (SAST/DAST) and vulnerability scanning. 
+                            Deployed on OCI infrastructure using Terraform, achieving 60% faster deployments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">GitLab CI/CD</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Trivy</span>
+                            <span class="tech-badge">SonarQube</span>
+                            <span class="tech-badge">Terraform</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-rocket"></i>
+                            <span>60% faster deployments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Big Data Architecture -->
+                <div class="project-card" data-category="cloud" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Real-Time Big Data Architecture</h3>
+                            <span class="project-period">Dec 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Streaming data pipeline processing 10K+ events per second for anomaly detection. 
+                            Real-time metrics visualization with automated alerting system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Kafka</span>
+                            <span class="tech-badge">Spark</span>
+                            <span class="tech-badge">StreamLit</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>10K+ events/sec</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: IDS System -->
+                <div class="project-card" data-category="ids" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Suricata IDS with Real-Time Dashboard</h3>
+                            <span class="project-period">Jun - Aug 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Deployed intrusion detection system analyzing 5000+ security events daily. 
+                            Centralized logging with InfluxDB and 8 custom Grafana dashboards for threat visualization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Suricata</span>
+                            <span class="tech-badge">InfluxDB</span>
+                            <span class="tech-badge">Grafana</span>
+                            <span class="tech-badge">Telegraf</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-chart-line"></i>
+                            <span>40% reduced false positives</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Honeypot -->
+                <div class="project-card" data-category="ids" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-spider"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Multi-Service Honeypot Environment</h3>
+                            <span class="project-period">Sep - Nov 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Containerized honeypot infrastructure capturing 200+ intrusion attempts daily. 
+                            Behavioral analysis with ELK Stack for threat intelligence gathering.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Cowrie</span>
+                            <span class="tech-badge">Conpot</span>
+                            <span class="tech-badge">ELK Stack</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-bug"></i>
+                            <span>200+ intrusions/day captured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: SDN Firewall -->
+                <div class="project-card" data-category="devsecops" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Dynamic SDN Firewall</h3>
+                            <span class="project-period">Nov - Dec 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Software-Defined Networking firewall with dynamic traffic control and 
+                            self-programmable security rules using OpenFlow protocol.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">OpenFlow</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Ryu</span>
+                            <span class="tech-badge">NameSpaces</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-cogs"></i>
+                            <span>Dynamic rule programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Quantum Auth -->
+                <div class="project-card" data-category="crypto" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Quantum-Resistant Authentication</h3>
+                            <span class="project-period">Feb - Apr 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Authentication system using post-quantum algorithms (Kyber & Dilithium) 
+                            to ensure security against quantum computer attacks.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Kyber</span>
+                            <span class="tech-badge">Dilithium</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">C</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-atom"></i>
+                            <span>Quantum-resistant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Learn Bridge -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Learn Bridge Academy</h3>
+                            <span class="project-period">Mar - May 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Intuitive platform for managing exams, grades, and student tracking. 
+                            Simplifies academic evaluation with streamlined user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-users"></i>
+                            <span>Education Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: MUN Website -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">MUN ENSA Marrakech Website</h3>
+                            <span class="project-period">Jan - Feb 2025</span>
+                        </div>
+                        <p class="project-description">
+                            Official website for MUN club at ENSA Marrakech, showcasing events 
+                            and facilitating registration with seamless user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-globe"></i>
+                            <span>Event Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Cyprotect -->
+                <div class="project-card" data-category="crypto web" data-aos="fade-up" data-aos-delay="800">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Mourad-wh" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Cyprotect Platform</h3>
+                            <span class="project-period">Nov - Dec 2024</span>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive cybersecurity services platform offering certificate generation, 
+                            encryption algorithm implementation, and security tools.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">OpenSSL</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-tools"></i>
+                            <span>Security Services Suite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="https://github.com/Mourad-wh" target="_blank" class="btn btn-primary-custom">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/projects&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Academic Experience</h2>
+                <p class="section-subtitle">Career Journey & Achievements</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025 - August 2025</div>
+                        <h3 class="timeline-title">Cybersecurity Analyst (Internship)</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Ministry of Equipment and Water, Rabat
+                        </h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Deployed Suricata IDS system analyzing <strong>5000+ security events daily</strong>, reducing false positives by 40%</li>
+                                <li>Centralized security logs using InfluxDB and created <strong>8 custom Grafana dashboards</strong> for real-time threat visualization</li>
+                                <li>Implemented automated alert system for critical security incidents</li>
+                                <li>Conducted threat intelligence analysis and security report generation</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-badge">Suricata</span>
+                            <span class="tech-badge">InfluxDB</span>
+                            <span class="tech-badge">Grafana</span>
+                            <span class="tech-badge">Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2024 - August 2024</div>
+                        <h3 class="timeline-title">Cybersecurity Associate (Internship)</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-code"></i>
+                            Code Alpha & Prodigy Infotech
+                        </h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed <strong>3 security tools in Python</strong>: firewall simulation, innovative image encryption system, and password strength evaluator</li>
+                                <li><strong>MiniGate:</strong> Algorithm simulating simplified firewall principles</li>
+                                <li><strong>PixelShield:</strong> Symmetric encryption algorithm for images using custom cipher</li>
+                                <li><strong>FortiGate:</strong> Password complexity evaluation system with entropy calculation</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Cryptography</span>
+                            <span class="tech-badge">Network Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2027</div>
+                        <h3 class="timeline-title">Engineering Cycle</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-university"></i>
+                            ENSA Marrakech - Cyber Defense & Embedded Telecommunications
+                        </h4>
+                        <div class="timeline-description">
+                            <p>
+                                Specialized in cybersecurity, cryptography, and secure systems design. 
+                                Active in leadership roles as President of Self-Dev Club and Co-founder/Vice-President of MUN ENSA.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker education-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3 class="timeline-title">Preparatory Classes</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-university"></i>
+                            ENSA Marrakech - Integrated Preparatory Program
+                        </h4>
+                        <div class="timeline-description">
+                            <p>
+                                Intensive program in mathematics, physics, and computer science fundamentals, 
+                                preparing for engineering specialization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/experience&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Activities Section -->
+    <section id="leadership" class="section leadership-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;leadership&gt;</span>
+                <h2 class="section-title">Leadership & Activities</h2>
+                <p class="section-subtitle">Building Communities & Leading Initiatives</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- MUN ENSA Marrakech -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leadership-card">
+                        <div class="leadership-image-container">
+                            <div class="leadership-image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Add MUN Photo Here</span>
+                            </div>
+                            <!-- REPLACE THE ABOVE WITH YOUR IMAGE:
+                            <img src="path/to/mun-photo.jpg" alt="MUN ENSA Marrakech" class="leadership-image">
+                            -->
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-logo">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h3 class="leadership-org">MUN ENSA Marrakech</h3>
+                            <div class="leadership-roles">
+                                <div class="role-item">
+                                    <h4 class="role-title">Co-Founder</h4>
+                                    <p class="role-period">May 2024 - May 2024 · 1 month</p>
+                                    <p class="role-description">
+                                        Co-founded the first Model United Nations initiative at ENSA, contributing to the vision, structure,
+                                        and strategic direction of the project. Played a key role in launch planning, team coordination,
+                                        and concept development, helping establish a sustainable foundation for a national-level academic and diplomatic simulation network.
+                                        This experience strengthened my skills in initiative building, diplomacy, and collaborative leadership.
+                                    </p>
+                                    <div class="role-skills">
+                                        <span class="skill-badge-small">Vision Building</span>
+                                        <span class="skill-badge-small">Strategic Collaboration</span>
+                                        <span class="skill-badge-small">Initiative & Ownership</span>
+                                    </div>
+                                </div>
+                                <div class="role-divider"></div>
+                                <div class="role-item">
+                                    <h4 class="role-title">Vice President</h4>
+                                    <p class="role-period">June 2024 - April 2025 · 11 months</p>
+                                    <p class="role-description">
+                                        Led organizational strategy and operational execution for ENSA’s flagship diplomatic simulation program.
+                                        Oversaw project planning, internal coordination, and committee management,
+                                        ensuring smooth execution of events and academic sessions.
+                                        Actively contributed to decision-making, problem-solving, and stakeholder communication,
+                                        while mentoring members and reinforcing a culture of professionalism and excellence.
+                                    </p>
+                                    <div class="role-skills">
+                                        <span class="skill-badge-small">Leadership & Delegation</span>
+                                        <span class="skill-badge-small">Decision-Making Under Pressure</span>
+                                        <span class="skill-badge-small">Organizational Excellence</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Club Self-Dev -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leadership-card">
+                        <div class="leadership-image-container">
+                            <div class="leadership-image-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Add Self-Dev Photo Here</span>
+                            </div>
+                            <!-- REPLACE THE ABOVE WITH YOUR IMAGE:
+                            <img src="path/to/selfdev-photo.jpg" alt="Club Self-Dev" class="leadership-image">
+                            -->
+                        </div>
+                        <div class="leadership-content">
+                            <div class="leadership-logo">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="leadership-org">Club Self-Dev</h3>
+                            <div class="leadership-roles">
+                                <div class="role-item">
+                                    <h4 class="role-title">President</h4>
+                                    <p class="role-period">April 2024 - May 2025 · 1 year 2 months</p>
+                                    <p class="role-description">
+                                        Guided the club’s strategic vision and long-term development, building on prior leadership experience to drive growth and impact.
+                                        Led and organized personal development programs, workshops, and initiatives, focusing on leadership, mindset, and critical thinking.
+                                        Strengthened the club’s internal structure, motivated members, and fostered an engaged community centered on self-improvement, discipline, and excellence..
+                                    </p>
+                                    <div class="role-skills">
+                                        <span class="skill-badge-small">Inspirational Leadership</span>
+                                        <span class="skill-badge-small">Strategic Thinking</span>
+                                        <span class="skill-badge-small">Community Building</span>
+                                    </div>
+                                </div>
+                                <div class="role-item">
+                                    <h4 class="role-title">General Secretary</h4>
+                                    <p class="role-period">May 2023 - April 2024 · 1 year</p>
+                                    <p class="role-description">
+                                        Managed the club’s administrative, organizational, and coordination activities, ensuring effective communication between the board and members.
+                                        Played a central role in planning events, documenting activities, and structuring internal processes.
+                                        This role marked a key step in my leadership journey, sharpening my skills in organization, responsibility, and team coordination.
+                                    </p>
+                                    <div class="role-skills">
+                                        <span class="skill-badge-small">Effective Communication</span>
+                                        <span class="skill-badge-small">Attention to Detail</span>
+                                        <span class="skill-badge-small">Reliability & Discipline</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/leadership&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's Discuss Your Security Needs</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:mouradelouatik04@gmail.com">mouradelouatik04@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+212623189074">+212 623-189074</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>233 Ilot C Assif, Marrakech, Morocco</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Mourad-wh" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mourad-el-ouatik" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.credly.com/users/mourad-el-ouatik" target="_blank" class="social-link">
+                                <i class="fas fa-award"></i>
+                            </a>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="status-indicator-large"></div>
+                            <span>Available for internship opportunities (1-2 months)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom w-100">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <span class="section-tag closing-tag">&lt;/contact&gt;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-text mb-md-0">
+                        &copy; 2026 Mourad EL OUATIK. 
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-text mb-0">
+                        <span class="code-tag">&lt;/html&gt;</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- LinkedIn Badge -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
