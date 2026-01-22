@@ -1588,47 +1588,29 @@ textarea.form-control {
 /* ===================================
    Styled Visitor Counter
    =================================== */
-
-.visitor-counter-minimal a {
-    text-decoration: none;
-}
-
-.counter-box-minimal {
+.counter-link-simple {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 20px;
-    background: rgba(10, 25, 47, 0.8);
+    padding: 10px 20px;
+    background: var(--card-bg);
     border: 1px solid var(--accent-cyan);
     border-radius: 20px;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
     transition: var(--transition-fast);
 }
 
-.counter-box-minimal:hover {
+.counter-link-simple:hover {
     border-color: var(--accent-green);
+    color: var(--accent-green);
     box-shadow: 0 5px 20px rgba(100, 255, 218, 0.2);
 }
 
-.counter-box-minimal i {
-    color: var(--accent-cyan);
-    font-size: 1rem;
-}
-
-.counter-box-minimal span {
-    font-family: var(--font-mono);
-    color: var(--text-gray);
-    font-size: 0.9rem;
-}
-
-.visitor-number {
-    font-family: var(--font-display);
-    color: var(--accent-cyan);
+.counter-link-simple i {
     font-size: 1.1rem;
-    font-weight: 700;
-    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
-    min-width: 30px;
-    display: inline-block;
-    text-align: center;
 }
 /* ===================================
    Animations
