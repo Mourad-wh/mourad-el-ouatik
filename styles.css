@@ -1620,12 +1620,16 @@ textarea.form-control {
     font-size: 0.9rem;
 }
 
-.visitor-number img {
-    /* This will show only the number part */
-    clip-path: inset(0 30% 0 30%);
-    height: 20px !important;
+.visitor-number {
+    font-family: var(--font-display);
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
 }
-
 /* ===================================
    Animations
    =================================== */
