@@ -135,7 +135,7 @@ const typedTextElement = document.getElementById('typed-text');
 const texts = [
     'DevSecOps Enthusiast ',
     'Cloud Security Enginneer',
-    'Cybersecurity Expert',
+    'Cybersecurity Student',
     'Post-Quantum Cryptographer'
 ];
 let textIndex = 0;
