@@ -1586,6 +1586,96 @@ textarea.form-control {
 }
 
 /* ===================================
+   Styled Visitor Counter
+   =================================== */
+.visitor-counter-styled {
+    margin-top: 20px;
+}
+
+.counter-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: var(--transition-fast);
+}
+
+.counter-link:hover {
+    transform: translateY(-2px);
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 25px;
+    background: var(--card-bg);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(100, 255, 218, 0.1);
+    transition: var(--transition-fast);
+}
+
+.counter-link:hover .counter-container {
+    border-color: var(--accent-green);
+    box-shadow: 0 8px 30px rgba(100, 255, 218, 0.2);
+}
+
+.counter-icon {
+    font-size: 1.5rem;
+    color: var(--accent-cyan);
+}
+
+.counter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.counter-label {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.counter-badge-wrapper {
+    background: rgba(10, 25, 47, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.counter-badge {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(23%) saturate(1487%) hue-rotate(115deg) brightness(101%) contrast(101%);
+}
+
+/* Make the GoatCounter badge colors match */
+.counter-badge-wrapper img {
+    mix-blend-mode: screen;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .counter-container {
+        padding: 10px 20px;
+        gap: 12px;
+    }
+    
+    .counter-icon {
+        font-size: 1.2rem;
+    }
+    
+    .counter-label {
+        font-size: 0.75rem;
+    }
+}
+
+/* ===================================
    Animations
    =================================== */
 @keyframes fadeInUp {
