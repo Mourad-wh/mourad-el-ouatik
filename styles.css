@@ -1620,10 +1620,10 @@ textarea.form-control {
     font-size: 0.9rem;
 }
 
-.counter-box-minimal img {
-    height: 20px;
-    filter: invert(1) hue-rotate(180deg);
-    mix-blend-mode: lighten;
+.visitor-number img {
+    /* This will show only the number part */
+    clip-path: inset(0 30% 0 30%);
+    height: 20px !important;
 }
 
 /* ===================================
