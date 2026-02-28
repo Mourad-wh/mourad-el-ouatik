@@ -510,13 +510,51 @@
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="devsecops">DevSecOps</button>
                 <button class="filter-btn" data-filter="cloud">Cloud Security</button>
-                <button class="filter-btn" data-filter="ids">IDS/IPS</button>
+                <button class="filter-btn" data-filter="ids">SOC</button>
                 <button class="filter-btn" data-filter="crypto">Cryptography</button>
                 <button class="filter-btn" data-filter="web">Web Development</button>
             </div>
 
             <!-- Projects Grid -->
             <div class="projects-grid" id="projectsGrid">
+                <!-- Project: SOC Architecture Client ↔ MSSP -->
+                <div class="project-card" data-category="ids" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/mourad-el-ouatik" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">SOC Architecture — Client ↔ MSSP</h3>
+                            <span class="project-period">Feb 2026 - Now</span>
+                        </div>
+                        <p class="project-description">
+                            Designed a full multi-tenant SOC architecture with a 3-node Wazuh SIEM cluster, 
+                            RTIR + Cortex integration for automated artifact enrichment and incident response, 
+                            and a MISP + OpenCTI threat intelligence pipeline mapped to MITRE ATT&CK.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Wazuh</span>
+                            <span class="tech-badge">RTIR</span>
+                            <span class="tech-badge">Cortex</span>
+                            <span class="tech-badge">MISP</span>
+                            <span class="tech-badge">OpenCTI</span>
+                            <span class="tech-badge">SOAR</span>
+                            <span class="tech-badge">MITRE ATT&CK</span>
+                        </div>
+                        <div class="project-achievement">
+                            <i class="fas fa-network-wired"></i>
+                            <span>End-to-end detection, response & threat intel pipeline</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 1: CI/CD Pipeline -->
                 <div class="project-card" data-category="devsecops cloud" data-aos="fade-up">
                     <div class="project-image">
