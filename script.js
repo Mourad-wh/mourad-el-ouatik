@@ -134,8 +134,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const typedTextElement = document.getElementById('typed-text');
 const texts = [
     'DevSecOps Enthusiast ',
+    'Security Architect',
     'Cloud Security Enginneer',
-    'Cybersecurity Student',
+    'Cybersecurity Expert',
     'Post-Quantum Cryptographer'
 ];
 let textIndex = 0;
@@ -246,55 +247,6 @@ filterButtons.forEach(button => {
         });
     });
 });
-
-// ===================================
-// Visitor Counter 
-// ===================================
-async function fetchVisitorCount() {
-    try {
-        // Using a reliable counter API
-        const response = await fetch('https://api.countapi.xyz/hit/mourad-portfolio-gh/visits');
-        const data = await response.json();
-        
-        if (data.value) {
-            document.getElementById('visitor-count').textContent = data.value;
-        } else {
-            // Fallback: Just show a static animated number
-            animateCount();
-        }
-    } catch (error) {
-        console.log('Using fallback counter');
-        animateCount();
-    }
-}
-
-// Fallback: Animate from localStorage
-function animateCount() {
-    // Get or initialize count from localStorage
-    let count = parseInt(localStorage.getItem('portfolioViews') || '0');
-    count++;
-    localStorage.setItem('portfolioViews', count);
-    
-    // Animate the number
-    const element = document.getElementById('visitor-count');
-    let current = 0;
-    const increment = count / 50;
-    
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= count) {
-            element.textContent = count;
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(current);
-        }
-    }, 20);
-}
-
-// Load count when page loads
-if (document.getElementById('visitor-count')) {
-    fetchVisitorCount();
-}
 
 // ===================================
 // AOS (Animate On Scroll) Initialization
@@ -451,7 +403,7 @@ console.log('%c🛡️ DevSecOps Engineer | Cloud Security Specialist',
     'color: #00FF88; font-size: 14px;');
 console.log('%c📧 Contact: mouradelouatik04@gmail.com', 
     'color: #8892B0; font-size: 12px;');
-console.log('%c🔗 GitHub: https://github.com/Mourad-wh', 
+console.log('%c🔗 GitHub: https://github.com/mourad-el-ouatik', 
     'color: #8892B0; font-size: 12px;');
 
 // ===================================
